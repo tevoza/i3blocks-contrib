@@ -1,0 +1,64 @@
+# i3blocks config file
+#
+# Please see man i3blocks for a complete reference!
+# The man page is also hosted at http://vivien.github.io/i3blocks
+#
+# List of valid properties:
+#
+# align
+# color
+# command
+# full_text
+# instance
+# interval
+# label
+# min_width
+# name
+# separator
+# separator_block_width
+# short_text
+# signal
+# urgent
+
+# Global properties
+#
+# The top properties below are applied to every block, but can be overridden.
+# Each block command defaults to the script name to avoid boilerplate.
+# Change $SCRIPT_DIR to the location of your scripts!
+SCRIPT_DIR=/home/adam/.config/i3blocks/i3blocks-contrib
+command=$SCRIPT_DIR/$BLOCK_NAME/$BLOCK_NAME
+separator_block_width=15
+separator=
+markup=pango
+#color=#91fbff
+color=#ffffff
+
+#[cpu_usage2]
+#markup=pango
+#interval=persist
+#LABEL=
+
+[memory]
+label= 
+interval=10
+
+[bandwidth2]
+USE_BITS=1
+interval=10
+markup=pango
+LABEL=
+
+[arch-update]
+interval=3600
+markup=pango
+LABEL= 
+
+[date]
+command=date +"%a %Y-%m-%d"
+label= 
+interval=60
+
+[time]
+command=date +"%R"
+label= 
+interval=10

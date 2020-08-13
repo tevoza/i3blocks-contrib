@@ -16,8 +16,7 @@ python3, python3-tk, xrandr, fontawesome (fonts-font-awesome package), arandr su
 Add the following to your i3blocks config:
 
 ```
-[monitors]
-command=$SCRIPT_DIR/monitor_manager
+[monitor_manager]
 interval=once
 #SHOW_ON_OFF=1
 #SHOW_NAMES=1
